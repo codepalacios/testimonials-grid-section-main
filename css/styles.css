@@ -1,0 +1,130 @@
+/* Reset stykes */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+img,
+span {
+  display: block;
+}
+
+/* Mobile styles */
+body {
+  background: #ecf2f8;
+}
+
+.grid-container {
+  display: grid;
+  gap: calc((24 / 16) * 1rem);
+  padding: calc((71 / 16) * 1rem) 24px;
+  max-width: calc((768 / 16) * 1rem);
+  margin: 0 auto;
+}
+.grid-container section {
+  border-radius: 8px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+  padding-top: calc((26 / 16) * 1rem);
+  padding-bottom: calc((32 / 16) * 1rem);
+  padding-right: 32px;
+  padding-left: 32px;
+}
+.profile {
+  display: flex;
+  gap: calc((17 / 16) * 1rem);
+}
+.profile img {
+  width: calc((28 / 16) * 1rem);
+  height: calc((28 / 16) * 1rem);
+  border-radius: 28px;
+}
+.profile p {
+  font-size: calc((13 / 16) * 1rem);
+  font-weight: 500;
+  line-height: calc((13 / 16) * 1rem);
+}
+.profile span {
+  font-size: calc((11 / 16) * 1rem);
+  line-height: calc((11 / 16) * 1rem);
+  margin-top: calc((4 / 16) * 1rem);
+}
+section h2 {
+  font-size: calc((20 / 16) * 1rem);
+  font-weight: 600;
+  line-height: normal;
+  margin-top: calc((18 / 16) * 1rem);
+  margin-bottom: calc((40 / 16) * 1rem);
+}
+section p {
+  font-size: calc((13 / 16) * 1rem);
+  font-weight: 500;
+  line-height: calc((18 / 16) * 1rem);
+}
+.card--one {
+  background-color: #733fc8;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 24px;
+}
+.card--one img {
+  border: 2px solid #a775f1;
+}
+.card--one .profile,
+.card--two .profile,
+.card--four .profile {
+  color: #fff;
+}
+.card--one span,
+.card--two span,
+.card--three span,
+.card--four span,
+.card--five span {
+  opacity: 0.5;
+}
+.card--one h2,
+.card--two h2 {
+  color: #fff;
+}
+.card--one > p {
+  color: #cfcfcf;
+  opacity: 0.7;
+}
+.card--two {
+  background-color: #48556a;
+}
+.card--two > p,
+.card--four > p {
+  color: #fff;
+  opacity: 0.7;
+}
+.card--three,
+.card--five {
+  background-color: #fff;
+}
+.card--three .profile,
+.card--five .profile {
+  color: #48556a;
+}
+.card--three h2,
+.card--five h2 {
+  color: #48556a;
+}
+.card--three > p,
+.card--five > p {
+  color: #48556a;
+  opacity: 0.7;
+}
+.card--four {
+  background-color: #19202d;
+}
+.card--four img {
+  border: 2px solid #733fc8;
+}
+.card--four h2 {
+  color: #ecf2f8;
+}
