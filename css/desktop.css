@@ -1,0 +1,42 @@
+/* Desktop styles */
+@media (min-width: 1120px) {
+  body {
+    min-height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 30px;
+    row-gap: calc((21 / 16) * 1rem);
+    padding: 0;
+    max-width: calc((1110 / 16) * 1rem);
+    margin: calc((5 / 16) * 1rem) 5px;
+  }
+  section h2 {
+    margin-bottom: calc((24 / 16) * 1rem);
+  }
+  .card--one {
+    grid-column: span 2;
+    background-position: top right 88px;
+  }
+  .card--one h2 {
+    margin-bottom: 1rem;
+  }
+  .card--two h2 {
+    margin-bottom: 1rem;
+  }
+  .card--three {
+    grid-row-start: 2;
+  }
+  .card--four {
+    grid-column: span 2;
+  }
+  .card--five {
+    grid-column-start: 4;
+    grid-row: 1 / 3;
+  }
+}

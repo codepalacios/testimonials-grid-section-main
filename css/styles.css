@@ -56,7 +56,6 @@ body {
 section h2 {
   font-size: calc((20 / 16) * 1rem);
   font-weight: 600;
-  line-height: normal;
   margin-top: calc((18 / 16) * 1rem);
   margin-bottom: calc((40 / 16) * 1rem);
 }
@@ -67,9 +66,10 @@ section p {
 }
 .card--one {
   background-color: #733fc8;
-  background-image: url("./images/bg-pattern-quotation.svg");
+  background-image: url("../images/bg-pattern-quotation.svg");
   background-repeat: no-repeat;
   background-position: top right 24px;
+  background-size: calc((104 / 16) * 1rem) calc((102 / 16) * 1rem);
 }
 .card--one img {
   border: 2px solid #a775f1;
